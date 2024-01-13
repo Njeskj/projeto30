@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reino Textual</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      margin-bottom: 60px; /* Ajuste para evitar sobreposição do rodapé */
+    }
+    #sidebar {
+        margin-top: 60px;
+    }
+    #sidebar h2 {
+        border-bottom: 1px solid #ddd;
+        text-transform: uppercase;
+    }
+    #principal {
+        padding-top: 60px;
+        border-left: 1px solid #ddd;
+        padding-bottom: 60px;
+    }
+    section {
+      margin-top: 30px;
+    }
+    .fixed-sidebar {
+      transition: margin .5s;
+    }
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .solid-divider {
+      border-right: 1px solid #ddd;
+      height: 100vh;
+      position: fixed;
+      margin-left: -15px; /* Ajuste para coincidir com a margem do sidebar */
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="../index.php">Reino Textual</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+      
+          <!-- Navbar lateral esquerda -->
+          <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light fixed-sidebar">
+        <div class="sidebar-sticky">
+            <h2>menu</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="guia.html#planejamento-design">
+                1. Planejamento e Design
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#configuracao-ambiente">
+                2. Configuração do Ambiente
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#desenvolvimento-frontend">
+                3. Desenvolvimento Front-end
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#desenvolvimento-backend">
+                4. Desenvolvimento Back-end
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#sistema-de-jogo">
+                5. Sistema de Jogo
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#autenticacao-seguranca">
+                6. Autenticação e Segurança
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#pay-to-win">
+                7. Pay-to-Win
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#testes">
+                8. Testes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#implementacao-multiplayer">
+                9. Implementação do Multiplayer
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#implantacao">
+                10. Implantação
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#monitoramento-manutencao">
+                11. Monitoramento e Manutenção
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Divisória sólida -->
+      <div class="solid-divider"></div>
+
+
+   <!-- Conteúdo principal -->
+   <main id="principal" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <h1 class="mb-4">Guia de Desenvolvimento</h1>
+
+  <section id="planejamento-design">
+    <a href="1.html"><h2>1. Planejamento e Design do Jogo:</h2></a>
+    <p>
+      Antes de começar a codificar, é crucial fazer um planejamento detalhado do seu jogo. Isso inclui:
+    </p>
+    <ul>
+      <li><strong>Design do Jogo:</strong> Esboce as mecânicas, recursos, e sistemas que você quer no jogo.</li>
+      <li><strong>Banco de Dados:</strong> Projete um esquema de banco de dados para armazenar informações do jogador, como recursos, níveis de recursos, tropas, etc.</li>
+      <li><strong>Front-end e UI/UX:</strong> Crie wireframes para a interface do usuário e design da dashboard.</li>
+    </ul>
+  </section>
+
+  <section id="configuracao-ambiente">
+    <h2>2. Configuração do Ambiente de Desenvolvimento:</h2>
+    <p>
+      Instale as Ferramentas Necessárias:
+    </p>
+    <ul>
+      <li>Um editor de código (VSCode, Sublime Text, etc.).</li>
+      <li>Um servidor local (XAMPP, MAMP) para testar o código PHP no seu computador.</li>
+    </ul>
+  </section>
+
+  <section id="desenvolvimento-frontend">
+    <h2>3. Desenvolvimento Front-end:</h2>
+    <p>
+      <strong>HTML/CSS (SASS/LESS):</strong>
+    </p>
+    <ul>
+      <li>Crie as páginas necessárias para registro, login, dashboard e visualização do jogo.</li>
+      <li>Implemente a interface do usuário para interação com os recursos, tropas e outras funcionalidades.</li>
+    </ul>
+    <p>
+      <strong>Javascript (AJAX/React):</strong>
+    </p>
+    <ul>
+      <li>Use AJAX para criar interações assíncronas com o servidor.</li>
+      <li>Integre a biblioteca React para facilitar a construção de componentes reutilizáveis e gerenciar o estado do jogo.</li>
+    </ul>
+  </section>
+
+  <section id="desenvolvimento-backend">
+    <h2>4. Desenvolvimento Back-end:</h2>
+    <p>
+      <strong>PHP (Laravel):</strong>
+    </p>
+    <ul>
+      <li>Configure e instale o Laravel.</li>
+      <li>Implemente rotas, controladores e modelos para gerenciar o registro, login, e operações do jogo.</li>
+      <li>Integre o Laravel com o banco de dados para armazenar e recuperar dados do jogo.</li>
+    </ul>
+  </section>
+
+  <section id="sistema-de-jogo">
+    <h2>5. Sistema de Jogo:</h2>
+    <p>
+      <strong>Lógica do Jogo:</strong>
+    </p>
+    <ul>
+      <li>Desenvolva a lógica do jogo para evolução de recursos, criação de tropas, batalhas, etc.</li>
+      <li>Implemente um sistema de atualização de recursos ao longo do tempo.</li>
+    </ul>
+    <p>
+      <strong>Sistema de Batalha:</strong>
+    </p>
+    <ul>
+      <li>Crie um sistema de batalha com regras claras.</li>
+      <li>Atualize o estado do jogo com base nos resultados das batalhas.</li>
+    </ul>
+    <p>
+      <strong>Troca de Recursos:</strong>
+    </p>
+    <ul>
+      <li>Implemente um sistema que permita aos jogadores trocarem recursos entre si.</li>
+    </ul>
+  </section>
+  
+  <section id="autenticacao-seguranca">
+    <h2>6. Autenticação e Segurança:</h2>
+    <p>
+      <strong>Autenticação de Usuários:</strong>
+    </p>
+    <ul>
+      <li>Implemente um sistema robusto de registro e login.</li>
+      <li>Certifique-se de proteger as informações sensíveis e use práticas de segurança.</li>
+    </ul>
+  </section>
+  
+  <section id="pay-to-win">
+    <h2>7. Pay-to-Win:</h2>
+    <p>
+      <strong>Integração de Pagamento:</strong>
+    </p>
+    <ul>
+      <li>Utilize serviços de pagamento online para processar transações de cartão de crédito, débito ou PIX.</li>
+      <li>Implemente lógica no back-end para conceder benefícios aos jogadores que fizerem compras.</li>
+    </ul>
+  </section>
+  
+  <section id="testes">
+    <h2>8. Testes:</h2>
+    <p>
+      <strong>Testes de Unidade e Integração:</strong>
+    </p>
+    <ul>
+      <li>Teste cada componente do seu jogo individualmente.</li>
+      <li>Realize testes de integração para garantir que todos os sistemas funcionem corretamente juntos.</li>
+    </ul>
+  </section>
+
+  <section id="implementacao-multiplayer">
+    <h2>9. Implementação do Multiplayer:</h2>
+    <p>
+      <strong>Sockets e Comunicação em Tempo Real:</strong>
+    </p>
+    <ul>
+      <li>Integre tecnologias como WebSockets para suportar a comunicação em tempo real entre jogadores.</li>
+    </ul>
+  </section>
+  
+  <section id="implantacao">
+    <h2>10. Implantação:</h2>
+    <p>
+      <strong>Implantação do Front-end e Back-end:</strong>
+    </p>
+    <ul>
+      <li>Implante seu jogo em um servidor web.</li>
+      <li>Configure o banco de dados em um ambiente de produção.</li>
+    </ul>
+  </section>
+  
+  <section id="monitoramento-manutencao">
+    <h2>11. Monitoramento e Manutenção:</h2>
+    <p>
+      <strong>Monitoramento do Jogo:</strong>
+    </p>
+    <ul>
+      <li>Utilize ferramentas para monitorar o desempenho do jogo e identificar possíveis problemas.</li>
+    </ul>
+    <p>
+      <strong>Atualizações e Manutenção:</strong>
+    </p>
+    <ul>
+      <li>Mantenha seu jogo com atualizações regulares para corrigir bugs e adicionar novos recursos.</li>
+    </ul>
+</main>
+
+</div>
+
+</div>
+
+<footer class="footer fixed-bottom py-3 bg-dark">
+    <div class="container">
+      <span class="text-primary">© 2023 <a href="guia.html">Reino Textual.</a> Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  // Adiciona a classe 'fixed-top' à navbar quando o usuário rola para cima
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('#sidebar').addClass('fixed-top');
+    } else {
+      $('#sidebar').removeClass('fixed-top');
+    }
+  });
+</script>
+</body>
+</html>

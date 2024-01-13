@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reino Textual</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+      margin-bottom: 60px; /* Ajuste para evitar sobreposição do rodapé */
+    }
+    #sidebar {
+        margin-top: 60px;
+    }
+    #sidebar h2 {
+        border-bottom: 1px solid #ddd;
+        text-transform: uppercase;
+    }
+    #principal {
+        padding-top: 60px;
+        border-left: 1px solid #ddd;
+        padding-bottom: 60px;
+    }
+    section {
+      margin-top: 30px;
+    }
+    .fixed-sidebar {
+      transition: margin .5s;
+    }
+    .fixed-top {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .solid-divider {
+      border-right: 1px solid #ddd;
+      height: 100vh;
+      position: fixed;
+      margin-left: -15px; /* Ajuste para coincidir com a margem do sidebar */
+    }
+  </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="guia.html">Reino Textual</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="guia.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+      
+          <!-- Navbar lateral esquerda -->
+          <nav id="sidebar" class="col-md-2 d-none d-md-block bg-light fixed-sidebar">
+        <div class="sidebar-sticky">
+            <h2>menu</h2>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="guia.html#planejamento-design">
+                1. Planejamento e Design
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#configuracao-ambiente">
+                2. Configuração do Ambiente
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#desenvolvimento-frontend">
+                3. Desenvolvimento Front-end
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#desenvolvimento-backend">
+                4. Desenvolvimento Back-end
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#sistema-de-jogo">
+                5. Sistema de Jogo
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#autenticacao-seguranca">
+                6. Autenticação e Segurança
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#pay-to-win">
+                7. Pay-to-Win
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#testes">
+                8. Testes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#implementacao-multiplayer">
+                9. Implementação do Multiplayer
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#implantacao">
+                10. Implantação
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="guia.html#monitoramento-manutencao">
+                11. Monitoramento e Manutenção
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Divisória sólida -->
+      <div class="solid-divider"></div>
+
+
+   <!-- Conteúdo principal -->
+   <main id="principal" role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+    <section>
+        <h2>1. Design do Jogo:</h2>
+
+        <div class="row">
+          <section class="col-md-4">
+            <h3>Mecânicas:</h3>
+            <ul>
+              <li>Descreva as principais mecânicas do jogo, como a coleta de recursos, construção de edifícios, treinamento de tropas, pesquisa de tecnologias, etc.</li>
+              <li>Estabeleça regras para interações entre jogadores, como alianças, comércio e combate.</li>
+              <li>Defina condições de vitória e derrota.</li>
+            </ul>
+          </section>
+
+          <section class="col-md-4">
+            <h3>Recursos:</h3>
+            <ul>
+              <li>Liste e detalhe os tipos de recursos presentes no jogo, como comida, madeira, ouro e pedra.</li>
+              <li>Determine as taxas de produção e consumo de recursos.</li>
+              <li>Pense em como os jogadores podem melhorar a eficiência da produção.</li>
+            </ul>
+          </section>
+
+          <section class="col-md-4">
+            <h3>Sistemas:</h3>
+            <ul>
+              <li>Esboce sistemas específicos, como um sistema de evolução de recursos até o nível 20.</li>
+              <li>Considere sistemas de pesquisa para melhorar as habilidades das tropas e os processos de produção.</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Banco de Dados:</h2>
+
+        <div class="row">
+          <section class="col-md-4">
+            <h3>Esquema do Banco de Dados:</h3>
+            <ul>
+              <li>Desenhe um esquema que inclua tabelas para jogadores, recursos, níveis de recursos, tropas, etc.</li>
+              <li>Estabeleça relações entre as tabelas, como a relação entre um jogador e seus recursos.</li>
+            </ul>
+          </section>
+
+          <section class="col-md-4">
+            <h3>Armazenamento de Informações:</h3>
+            <ul>
+              <li>Decida quais informações específicas dos jogadores serão armazenadas, como pontuações, histórico de batalhas, etc.</li>
+              <li>Implemente boas práticas de segurança para proteger dados sensíveis.</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Front-end e UI/UX:</h2>
+
+        <div class="row">
+          <section class="col-md-4">
+            <h3>Wireframes:</h3>
+            <ul>
+              <li>Crie wireframes para as diferentes telas do jogo, incluindo a tela inicial, a dashboard, as telas de construção, pesquisa e batalha.</li>
+              <li>Projete a navegação entre as telas.</li>
+            </ul>
+          </section>
+
+          <section class="col-md-4">
+            <h3>Design da Interface do Usuário:</h3>
+            <ul>
+              <li>Desenvolva um design visual atraente e intuitivo para a interface do usuário.</li>
+              <li>Considere a usabilidade em diferentes dispositivos, incluindo desktop e dispositivos móveis.</li>
+              <li>Pense em como apresentar informações importantes de forma clara e acessível.</li>
+            </ul>
+          </section>
+
+          <section class="col-md-4">
+            <h3>Interação do Usuário:</h3>
+            <ul>
+              <li>Planeje como os jogadores interagirão com os elementos da interface, como botões, menus e arrastar e soltar.</li>
+              <li>Otimize a experiência do usuário para garantir uma jogabilidade suave.</li>
+            </ul>
+          </section>
+        </div>
+      </section>
+
+      <p>Certifique-se de envolver outros membros da equipe ou obter feedback de potenciais jogadores durante esse processo. Essas etapas fornecerão uma base sólida para o desenvolvimento do seu jogo RTS.</p>
+
+    </main>
+
+</div>
+
+</div>
+
+<footer class="footer fixed-bottom py-3 bg-dark">
+    <div class="container">
+      <span class="text-primary">© 2023 <a href="guia.html">Reino Textual.</a> Todos os direitos reservados.</span>
+    </div>
+  </footer>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  // Adiciona a classe 'fixed-top' à navbar quando o usuário rola para cima
+  $(window).scroll(function() {
+    if ($(document).scrollTop() > 50) {
+      $('#sidebar').addClass('fixed-top');
+    } else {
+      $('#sidebar').removeClass('fixed-top');
+    }
+  });
+</script>
+</body>
+</html>
